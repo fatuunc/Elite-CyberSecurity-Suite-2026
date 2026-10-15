@@ -1,0 +1,24 @@
+{
+  "engine": "AegisWAF-ForensiX v1.0",
+  "author": "Fatih Tunç",
+  "genesis_block_sha3_512": "15d035000a83bff64b8353c177824cd055f38debdd03133c53f3f0532a60235d84296d9f06f5eca1b9126a4712bb1b27006c075264601b2541a5acbf87cec501",
+  "chain_verification": "VERIFIED: All 1 capsules linked to Genesis Block without tampering.",
+  "capsules": [
+    {
+      "case_id": "FT-AEGIS-1792049689568-001",
+      "timestamp_utc": 1792049689.5682728,
+      "iso_timestamp": "2026-10-15T07:34:49Z",
+      "client_ip": "185.220.101.42",
+      "ja4_tls_fingerprint": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+      "ja4h_http_fingerprint": "po11nn01_4740ae6347b0_000000000000",
+      "evasion_vector": "JSON Duplicate Key Evasion -> Key 'role' defined 2x (WAF sees='user', Backend sees='superadmin' UNION SELECT pg_sleep(5)--')",
+      "severity": "HIGH",
+      "shannon_entropy": 5.1771,
+      "parser_delta_score": 10,
+      "raw_http_hex": "504f5354202f6170692f76312f617574682f656c657661746520485454502f312e310d0a486f73743a207761662e62656c65646979652e6c6f63616c0d0a436f6e74656e742d547970653a206170706c69636174696f6e2f6a736f6e0d0a436f6e74656e742d4c656e6774683a2038370d0a0d0a7b22757365726e616d65223a20226775657374222c2022726f6c65223a202275736572222c2022726f6c65223a2022737570657261646d696e2720554e494f4e2053454c4543542070675f736c6565702835292d2d227d",
+      "rfc3161_tsa_token": "TSA-2026-6ACC19613E76BC5CE5A9762E3A70D3FD",
+      "previous_capsule_hash": "15d035000a83bff64b8353c177824cd055f38debdd03133c53f3f0532a60235d84296d9f06f5eca1b9126a4712bb1b27006c075264601b2541a5acbf87cec501",
+      "capsule_sha3_512": "55c3f88ad995ff479a92c19c7f3a0cfb052d9090c069fe30b8cbfeeac065693183497d704ab481e2fd887fc4041795eb8f56de4e98294f8b3474b4e052cc372b"
+    }
+  ]
+}

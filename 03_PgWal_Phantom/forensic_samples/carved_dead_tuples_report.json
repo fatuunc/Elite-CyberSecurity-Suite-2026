@@ -1,0 +1,77 @@
+{
+  "forensic_tool": "PgWal-Phantom v1.0 Binary Heap Carver",
+  "author": "Fatih Tunç",
+  "inspected_file": "C:\\Users\\flati\\OneDrive\\Masaüstü\\Fatih_Tunc_Elite_CyberSecurity_Suite_2026\\03_PgWal_Phantom\\forensic_samples\\pg_heap_relfilenode_16384.bin",
+  "total_8kb_pages_scanned": 1,
+  "active_live_tuples_count": 2,
+  "recovered_deleted_tuples_count": 3,
+  "recovered_deleted_records": [
+    {
+      "page_number": 0,
+      "item_pointer_index": 2,
+      "ctid": "(0,2)",
+      "tuple_byte_offset": 7984,
+      "tuple_length_bytes": 109,
+      "t_xmin_created_xid": 1042,
+      "t_xmax_deleted_xid": 1089,
+      "column_count_natts": 4,
+      "status": "DELETED_DEAD_TUPLE",
+      "raw_payload_hex": "4c4f472d3030327c323032362d31302d31355430383a31323a34345a7c435249544943414c7c556e617574686f72697a65642053534820726f6f74206c6f67696e2066726f6d203138352e3232302e3130312e3432",
+      "carved_utf8_preview": "LOG-002|2026-10-15T08:12:44Z|CRITICAL|Unauthorized SSH root login from 185.220.101.42"
+    },
+    {
+      "page_number": 0,
+      "item_pointer_index": 3,
+      "ctid": "(0,3)",
+      "tuple_byte_offset": 7868,
+      "tuple_length_bytes": 115,
+      "t_xmin_created_xid": 1043,
+      "t_xmax_deleted_xid": 1089,
+      "column_count_natts": 4,
+      "status": "DELETED_DEAD_TUPLE",
+      "raw_payload_hex": "4c4f472d3030337c323032362d31302d31355430383a31333a30325a7c414c4552547c5741462052756c65203934323130302053514c692042797061737320617474656d707420627920757365723d61646d696e5f736861646f77",
+      "carved_utf8_preview": "LOG-003|2026-10-15T08:13:02Z|ALERT|WAF Rule 942100 SQLi Bypass attempt by user=admin_shadow"
+    },
+    {
+      "page_number": 0,
+      "item_pointer_index": 4,
+      "ctid": "(0,4)",
+      "tuple_byte_offset": 7756,
+      "tuple_length_bytes": 112,
+      "t_xmin_created_xid": 1044,
+      "t_xmax_deleted_xid": 1090,
+      "column_count_natts": 4,
+      "status": "DELETED_DEAD_TUPLE",
+      "raw_payload_hex": "4c4f472d3030347c323032362d31302d31355430383a31343a31395a7c435249544943414c7c457866696c74726174696f6e206f66202f6574632f736861646f7720262070675f617574686964207461626c652064756d70",
+      "carved_utf8_preview": "LOG-004|2026-10-15T08:14:19Z|CRITICAL|Exfiltration of /etc/shadow & pg_authid table dump"
+    }
+  ],
+  "active_records": [
+    {
+      "page_number": 0,
+      "item_pointer_index": 1,
+      "ctid": "(0,1)",
+      "tuple_byte_offset": 8096,
+      "tuple_length_bytes": 94,
+      "t_xmin_created_xid": 1041,
+      "t_xmax_deleted_xid": 0,
+      "column_count_natts": 4,
+      "status": "LIVE_ACTIVE_TUPLE",
+      "raw_payload_hex": "4c4f472d3030317c323032362d31302d31355430383a30303a30305a7c494e464f7c53797374656d2073746172747570206e6f726d616c202d204b4d42422047617465776179",
+      "carved_utf8_preview": "LOG-001|2026-10-15T08:00:00Z|INFO|System startup normal - KMBB Gateway"
+    },
+    {
+      "page_number": 0,
+      "item_pointer_index": 5,
+      "ctid": "(0,5)",
+      "tuple_byte_offset": 7672,
+      "tuple_length_bytes": 81,
+      "t_xmin_created_xid": 1045,
+      "t_xmax_deleted_xid": 0,
+      "column_count_natts": 4,
+      "status": "LIVE_ACTIVE_TUPLE",
+      "raw_payload_hex": "4c4f472d3030357c323032362d31302d31355430383a31353a30305a7c494e464f7c526f7574696e65206865616c746820636865636b204f4b",
+      "carved_utf8_preview": "LOG-005|2026-10-15T08:15:00Z|INFO|Routine health check OK"
+    }
+  ]
+}

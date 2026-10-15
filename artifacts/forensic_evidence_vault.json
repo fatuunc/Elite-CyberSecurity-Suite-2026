@@ -1,0 +1,56 @@
+{
+  "engine": "AegisWAF-ForensiX v1.0",
+  "author": "Fatih Tunç",
+  "genesis_block_sha3_512": "15d035000a83bff64b8353c177824cd055f38debdd03133c53f3f0532a60235d84296d9f06f5eca1b9126a4712bb1b27006c075264601b2541a5acbf87cec501",
+  "chain_verification": "VERIFIED: All 3 capsules linked to Genesis Block without tampering.",
+  "capsules": [
+    {
+      "case_id": "FT-AEGIS-1792050762218-001",
+      "timestamp_utc": 1792050762.2187383,
+      "iso_timestamp": "2026-10-15T07:52:42Z",
+      "client_ip": "185.220.101.42",
+      "ja4_tls_fingerprint": "t13d1516h2_8daaf6152771_e5627efa2ab1",
+      "ja4h_http_fingerprint": "po11nn01_4740ae6347b0_000000000000",
+      "evasion_vector": "JSON Duplicate Key Evasion -> Key 'access' defined 2x (WAF sees='readonly', Backend sees='root_admin' OR 1=1--')",
+      "severity": "HIGH",
+      "shannon_entropy": 5.0673,
+      "parser_delta_score": 10,
+      "raw_http_hex": "504f5354202f6170692f76312f70726976696c65676520485454502f312e310d0a486f73743a20636f72652e6e6574776f726b2e6c6f63616c0d0a436f6e74656e742d4c656e6774683a2037330d0a0d0a7b2275736572223a20226661746968222c2022616363657373223a2022726561646f6e6c79222c2022616363657373223a2022726f6f745f61646d696e27204f5220313d312d2d227d",
+      "rfc3161_tsa_token": "TSA-2026-AE88A841324BB220DC98B24C93305761",
+      "previous_capsule_hash": "15d035000a83bff64b8353c177824cd055f38debdd03133c53f3f0532a60235d84296d9f06f5eca1b9126a4712bb1b27006c075264601b2541a5acbf87cec501",
+      "capsule_sha3_512": "6b2ee90160ee5c0be2973b8c88c5f3a83e171490ce801fb631433bb5f297b335a6cd5ea57edd15c30f97e3b133c6081d8b32fd21796e0c17f41b697de2d75d13"
+    },
+    {
+      "case_id": "FT-AEGIS-1792050762220-002",
+      "timestamp_utc": 1792050762.2204158,
+      "iso_timestamp": "2026-10-15T07:52:42Z",
+      "client_ip": "194.26.192.77",
+      "ja4_tls_fingerprint": "t13d1516h2_8daaf6152771_b186095e22b6",
+      "ja4h_http_fingerprint": "po11nn02_5d1d7a48d178_000000000000",
+      "evasion_vector": "HTTP Request Smuggling (Simultaneous Content-Length & Transfer-Encoding Desync) || Malformed JSON Desync Attempt: Extra data: line 3 column 1 (char 5)",
+      "severity": "CRITICAL",
+      "shannon_entropy": 4.9639,
+      "parser_delta_score": 35,
+      "raw_http_hex": "504f5354202f73656172636820485454502f312e310d0a486f73743a207761662e6b7572756d2e6c6f63616c0d0a436f6e74656e742d4c656e6774683a20360d0a5472616e736665722d456e636f64696e673a206368756e6b65640d0a0d0a300d0a0d0a47504f5354202f61646d696e2f64656c6574655f7573657220485454502f312e310d0a486f73743a207761662e6b7572756d2e6c6f63616c0d0a0d0a",
+      "rfc3161_tsa_token": "TSA-2026-7131AE6434737D56D8B5D75FD8AD42BE",
+      "previous_capsule_hash": "6b2ee90160ee5c0be2973b8c88c5f3a83e171490ce801fb631433bb5f297b335a6cd5ea57edd15c30f97e3b133c6081d8b32fd21796e0c17f41b697de2d75d13",
+      "capsule_sha3_512": "adb1194eeaad2fe95d4a9bfabc1a90e5c3a38d7baf4ab4fa47073fd802db6998696c2808f38905f5210d34386788e06bab2ed64ba285028ff8bc6b2559444064"
+    },
+    {
+      "case_id": "FT-AEGIS-1792050762220-003",
+      "timestamp_utc": 1792050762.220593,
+      "iso_timestamp": "2026-10-15T07:52:42Z",
+      "client_ip": "45.154.255.89",
+      "ja4_tls_fingerprint": "t13d1516h2_8daaf6152771_f448c9012a99",
+      "ja4h_http_fingerprint": "ge11nn01_4740ae6347b0_000000000000",
+      "evasion_vector": "Double URL Encoding Evasion (%25 pattern detected) | Overlong UTF-8 Directory Traversal / Unicode Smuggling",
+      "severity": "CRITICAL",
+      "shannon_entropy": 4.979,
+      "parser_delta_score": 40,
+      "raw_http_hex": "474554202f76756c6e65726162696c69746965732f66692f3f706167653d253235326525323532652532353266256330256166657463256330256166736861646f7720485454502f312e310d0a486f73743a207365632e6b7572756d2e6c6f63616c0d0a0d0a",
+      "rfc3161_tsa_token": "TSA-2026-722839B67D56B48B1AF57F1530C3B0D2",
+      "previous_capsule_hash": "adb1194eeaad2fe95d4a9bfabc1a90e5c3a38d7baf4ab4fa47073fd802db6998696c2808f38905f5210d34386788e06bab2ed64ba285028ff8bc6b2559444064",
+      "capsule_sha3_512": "107abc9e9c4007d9bcef52afd0abe3318cdefca678bedf596ce41ee2aa8ba8d287e2d5a3e311bb57a3f9a3d56b1e62abba9d35ca09d01ed33fd0176faac413f2"
+    }
+  ]
+}

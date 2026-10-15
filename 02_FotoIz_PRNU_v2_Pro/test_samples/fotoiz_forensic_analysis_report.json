@@ -1,0 +1,46 @@
+{
+  "expert_witness_title": "ADLİ BİLİŞİM VE SENSÖR BİYOMETRİSİ UZMAN RAPORU",
+  "regulatory_compliance": "CMK m.134 & ISO/IEC 27037 Standartları",
+  "examiner": "Fatih Tunç (Digital Forensics Engineering)",
+  "timestamp_utc": "2026-10-15T07:53:57Z",
+  "evidence_item_1": {
+    "description": "Kamera Referans Görüntüsü",
+    "filename": "01_camera_reference_flat.png",
+    "sha256_hash": "74743458db116f52b189738809deb1343cb2ff6ecd343645905cad6724b849e3"
+  },
+  "evidence_item_2": {
+    "description": "Şüpheli / İncelenen Medya",
+    "filename": "02_whatsapp_exif_stripped.jpg",
+    "sha256_hash": "4e6f4f813d14148894e7170e2cb8c8767581801a33185ab74a9aef5eef5cd045"
+  },
+  "prnu_sensor_fingerprint_metrics": {
+    "PCE_Score": 15164.34,
+    "ENFSI_Threshold": 60.0,
+    "Court_Admissible_Match": true,
+    "Spatial_Shift_Peak_YX": [
+      0,
+      0
+    ],
+    "Forensic_Verdict": "KESİN EŞLEŞME: Aynı fiziksel CMOS sensör."
+  },
+  "splicing_localization_metrics": {
+    "total_windows_scanned": 49,
+    "anomalous_tampered_windows": 2,
+    "tampering_detected": true,
+    "suspect_regions_preview": [
+      {
+        "y": 64,
+        "x": 96,
+        "size": 64,
+        "local_pce": -13.62
+      },
+      {
+        "y": 96,
+        "x": 64,
+        "size": 64,
+        "local_pce": -11.35
+      }
+    ]
+  },
+  "scientific_conclusion": "İNCELEME SONUCU: Şüpheli görselin, adli referans kameranın CMOS sensöründen çıktığı ENFSI standartlarında KESİNLEŞMİŞTİR."
+}
